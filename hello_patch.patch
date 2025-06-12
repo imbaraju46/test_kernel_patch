@@ -1,10 +1,13 @@
+diff --git a/init/main.c b/init/main.c
+index abcdef1..1234567 100644
 --- a/init/main.c
 +++ b/init/main.c
-@@ -1000,6 +1000,8 @@ asmlinkage __visible void __init start_kernel(void)
+@@ -500,6 +500,8 @@ asmlinkage __visible void __init start_kernel(void)
  {
-     // Existing initialization code...
-
-+    printk(KERN_INFO "Hello Nokia World\n");
+     char *command_line;
+ 
++    printk(KERN_INFO "Hello, World!\n");
 +
-     // More initialization code...
- }
+     set_task_stack_end_magic(&init_task);
+     smp_setup_processor_id();
+     debug_objects_early_init();
