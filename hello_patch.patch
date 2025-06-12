@@ -1,0 +1,12 @@
+diff --git a/init/main.c b/init/main.c
+index abcdef1..1234567 100644
+--- a/init/main.c
++++ b/init/main.c
+@@ -1000,6 +1000,8 @@ asmlinkage __visible void __init start_kernel(void)
+ {
+     // Existing initialization code...
+
++    printk(KERN_INFO "Hello Nokia World\n");
++
+     // More initialization code...
+ }
