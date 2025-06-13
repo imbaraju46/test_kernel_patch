@@ -1,13 +1,14 @@
 diff --git a/init/main.c b/init/main.c
-index abcdef1..1234567 100644
+index c4778edae797..2a3d67457f05 100644
 --- a/init/main.c
 +++ b/init/main.c
-@@ -500,6 +500,8 @@ asmlinkage __visible void __init start_kernel(void)
- {
-     char *command_line;
+@@ -909,7 +909,7 @@ void start_kernel(void)
+ 	smp_setup_processor_id();
+ 	debug_objects_early_init();
+ 	init_vmlinux_build_id();
+-
++        printk(KERN_INFO "Adding dummy text for testing , World!\n");
+ 	cgroup_init_early();
  
-+    printk(KERN_INFO "Hello, World!\n");
-+
-     set_task_stack_end_magic(&init_task);
-     smp_setup_processor_id();
-     debug_objects_early_init();
+ 	local_irq_disable();
+
