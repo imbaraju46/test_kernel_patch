@@ -6,7 +6,6 @@ index c4778edae797..2a3d67457f05 100644
  	smp_setup_processor_id();
  	debug_objects_early_init();
  	init_vmlinux_build_id();
--
 +        printk(KERN_INFO "Adding dummy text for testing , World!\n");
  	cgroup_init_early();
  
